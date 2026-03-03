@@ -1,0 +1,78 @@
+{
+  "lastUpdated": "2026-03-03",
+  "facts": [
+    {
+      "id": 1,
+      "title": "India's Digital Public Infrastructure model adopted by multiple countries",
+      "topic": "Polity & Governance",
+      "examTag": "UPSC/SSC",
+      "detail": "Several nations are studying India's UPI, Aadhaar-style architecture, and digital payment governance as case studies for public service delivery."
+    },
+    {
+      "id": 2,
+      "title": "RBI maintains inflation-focused monetary stance",
+      "topic": "Economy",
+      "examTag": "Banking",
+      "detail": "The central bank's policy communication continues to prioritize inflation management while supporting sustainable growth."
+    },
+    {
+      "id": 3,
+      "title": "ISRO expands collaboration in space-tech startups",
+      "topic": "Science & Tech",
+      "examTag": "UPSC",
+      "detail": "Public-private partnerships in launch systems, satellites, and downstream services are increasing, boosting innovation."
+    },
+    {
+      "id": 4,
+      "title": "India's medal tally rises in global multi-sport events",
+      "topic": "Sports",
+      "examTag": "State PSC",
+      "detail": "Consistent investment in training ecosystems and grassroots infrastructure is reflected in improved international performance."
+    },
+    {
+      "id": 5,
+      "title": "New wetlands added to Ramsar list",
+      "topic": "Environment",
+      "examTag": "UPSC/State PSC",
+      "detail": "Additional recognition under Ramsar boosts conservation priority and highlights India's biodiversity stewardship goals."
+    },
+    {
+      "id": 6,
+      "title": "Record use of renewable energy in national grid",
+      "topic": "Environment",
+      "examTag": "SSC/UPSC",
+      "detail": "Higher solar and wind integration milestones signal progress towards energy transition targets and climate commitments."
+    },
+    {
+      "id": 7,
+      "title": "Major government recruitment drives announced",
+      "topic": "Polity & Governance",
+      "examTag": "SSC/Railways",
+      "detail": "Departments have announced large-scale hiring plans, increasing opportunities across central and state-level services."
+    },
+    {
+      "id": 8,
+      "title": "AI and cybersecurity feature in national policy discussions",
+      "topic": "Science & Tech",
+      "examTag": "Banking/UPSC",
+      "detail": "Policy bodies are emphasizing secure AI adoption and cyber resilience in critical infrastructure and digital services."
+    }
+  ],
+  "quizBank": [
+    {
+      "question": "Which convention is associated with global wetland conservation?",
+      "options": ["Montreal Protocol", "Ramsar Convention", "Kyoto Protocol", "CITES"],
+      "answer": "Ramsar Convention"
+    },
+    {
+      "question": "What does RBI primarily target while framing monetary policy?",
+      "options": ["Exchange rates", "Inflation stability", "Export tax", "Population growth"],
+      "answer": "Inflation stability"
+    },
+    {
+      "question": "UPI in India is best categorized as:",
+      "options": ["A tax law", "A digital public payment infrastructure", "A satellite program", "A census initiative"],
+      "answer": "A digital public payment infrastructure"
+    }
+  ]
+}
