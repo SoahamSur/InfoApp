@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GK Pulse - Daily Current Affairs for Govt Exam Aspirants</title>
+    <meta
+      name="description"
+      content="GK Pulse helps government exam aspirants build a daily current affairs habit with top happenings, quick facts, quizzes, and revision bookmarks."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="badge">For SSC, UPSC, Banking, Railways & State Exams</p>
+        <h1>GK Pulse: Daily Current Affairs, Made Exam-Ready</h1>
+        <p>
+          Start each day with high-impact happenings and facts curated for government exam preparation.
+          Build consistency through a daily streak, bookmarks, and instant self-check quizzes.
+        </p>
+        <div class="hero__stats">
+          <div class="stat-card">
+            <span id="today-date" class="stat-card__value">--</span>
+            <span class="stat-card__label">Today</span>
+          </div>
+          <div class="stat-card">
+            <span id="daily-count" class="stat-card__value">0</span>
+            <span class="stat-card__label">Top Facts</span>
+          </div>
+          <div class="stat-card">
+            <span id="streak-count" class="stat-card__value">0</span>
+            <span class="stat-card__label">Day Streak</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <h2>Focus by Topic</h2>
+        <div id="topic-filters" class="chip-grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel__heading">
+          <h2>Today's Priority Happenings</h2>
+          <button id="refresh-btn" class="btn btn--secondary">Refresh Mix</button>
+        </div>
+        <p class="hint">Tip: Click <strong>Bookmark</strong> for your revision list.</p>
+        <p id="data-status" class="hint"></p>
+        <div id="facts-list" class="fact-list"></div>
+      </section>
+
+      <section class="panel split">
+        <div>
+          <div class="panel__heading">
+            <h2>Bookmarked for Revision</h2>
+            <button id="clear-bookmarks" class="btn btn--danger">Clear</button>
+          </div>
+          <ul id="bookmark-list" class="bookmark-list"></ul>
+        </div>
+
+        <div>
+          <h2>Quick Self-Check</h2>
+          <p class="hint">One question a day to lock your retention.</p>
+          <div id="quiz-box" class="quiz-box"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Build your habit: 20 minutes of current affairs every day = serious exam edge.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

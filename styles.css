@@ -1,0 +1,258 @@
+:root {
+  --bg: #f6f8ff;
+  --surface: #ffffff;
+  --primary: #2f4eff;
+  --primary-dark: #1e34b2;
+  --text: #162038;
+  --muted: #516082;
+  --success: #0f8f4e;
+  --danger: #be2f4b;
+  --border: #d8def2;
+  --shadow: 0 12px 30px rgba(22, 32, 56, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #eef2ff 0%, var(--bg) 360px, var(--bg) 100%);
+}
+
+.hero {
+  background: radial-gradient(circle at 15% 10%, #6f84ff 0, var(--primary) 38%, #2336a7 100%);
+  color: white;
+  padding: 3rem 1rem 4rem;
+}
+
+.hero__content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  margin: 1rem 0 0.75rem;
+  font-size: clamp(1.8rem, 2.8vw, 2.8rem);
+}
+
+.hero p {
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0.75rem;
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-card__value {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.stat-card__label {
+  font-size: 0.85rem;
+  opacity: 0.95;
+}
+
+.layout {
+  max-width: 1024px;
+  margin: -2rem auto 2rem;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.panel__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  background: #eef2ff;
+  border: 1px solid #c6d0ff;
+  border-radius: 999px;
+  color: #2a3c9a;
+  padding: 0.35rem 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.chip.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.fact-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.fact-card {
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 0.85rem;
+}
+
+.fact-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.meta {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border-radius: 999px;
+  background: #f0f4ff;
+  border: 1px solid #d1dbff;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+}
+
+.fact-card p {
+  margin: 0.3rem 0 0.8rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.btn {
+  border: none;
+  border-radius: 0.55rem;
+  padding: 0.45rem 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn--secondary {
+  background: #e9edff;
+  color: #2336a7;
+}
+
+.btn--danger {
+  background: #ffe6ec;
+  color: var(--danger);
+}
+
+.split {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 900px) {
+  .split {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+.bookmark-list {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.bookmark-list li {
+  margin-bottom: 0.4rem;
+}
+
+.quiz-box {
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 0.85rem;
+}
+
+.quiz-box h3 {
+  margin: 0 0 0.6rem;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0.45rem;
+  background: #f5f7ff;
+  border: 1px solid #d9e0fa;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.option.correct {
+  border-color: #54bb7f;
+  background: #ecfff3;
+}
+
+.option.incorrect {
+  border-color: #d8667e;
+  background: #fff1f4;
+}
+
+.hint {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-weight: 600;
+  padding: 1rem;
+}
